@@ -1,7 +1,7 @@
 const Login = () => {
   return (
     <div>
-      <p>vista login</p>
+      <p>hvchj</p>
     </div>
   );
 };
