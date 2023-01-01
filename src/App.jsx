@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>cambiMOS ALGO</p>
+      <p>cambiMOS ALGOn</p>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
