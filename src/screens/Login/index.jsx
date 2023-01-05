@@ -5,7 +5,7 @@ const Login = () => {
     <div className="background">
       <div className="formContainer">
         <div className="form">
-          <p className="title">Inicio</p>
+          <p className="title">jkbfjksdfbjdksbfjsk</p>
           <div className="inputContainer">
             <input className="input" placeholder="Email" />
             <input className="input" placeholder="Password" />
