@@ -68,3 +68,9 @@
   color: #11923a;
   margin-left: 5px;
 }
+
+.iniciar {
+  background: none;
+  color: #9d9dd7;
+  cursor: pointer;
+}
