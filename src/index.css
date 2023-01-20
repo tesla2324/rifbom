@@ -16,6 +16,9 @@
 
   --primary: #3939c5;
   --secondary: #2c2c9a;
+  --placeholder: #a6a6f1;
+  --white: #d6d6d6;
+  --green: rgb(107, 184, 40);
 }
 
 body {

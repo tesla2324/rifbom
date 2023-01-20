@@ -21,7 +21,7 @@ const Login = () => {
     <div className="background">
       <div className="formContainer">
         <div className="form">
-          <p className="title">Inicio</p>
+          <p className="title">Login</p>
           <div className="inputContainer">
             <input
               className="input"
