@@ -1,73 +1,30 @@
 .background {
-  background: var(--primary);
+  background: #213547;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
-  flex-direction: column;
 }
-.containerRegister {
+.registerContainer {
+  background: #747bff;
   width: 400px;
   height: 500px;
-  background: var(--secondary);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.text {
+  background: #213547;
+  width: 350px;
+  height: 40px;
+  margin-top: 10px;
+}
 .register {
-  height: 20%;
+  width: 350px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white);
   font-size: 20px;
-}
-.input {
-  background: var(--primary);
-  border: none;
-  height: 30px;
-  width: 85%;
-  color: var(--white);
-  padding-left: 5px;
-  margin-bottom: 15px;
-}
-
-.input:focus {
-  outline: none;
-}
-
-.input::placeholder {
-  color: var(--placeholder);
-}
-
-.indication {
-  color: var(--white);
-  display: flex;
-  margin-top: 30px;
-}
-
-.btnLogin {
-  background: none;
-  padding: 0px;
-  margin: 0px;
-  color: var(--green);
-  margin-left: 7px;
-}
-
-.btnRegister {
-  margin-top: 20px;
-  background: none;
-  border: 1px solid var(--white);
-  color: var(--white);
-}
-
-.btnRegister:hover {
-  background: var(--white);
-  color: var(--secondary);
-}
-
-.btnRegister:focus {
-  outline: none;
 }
