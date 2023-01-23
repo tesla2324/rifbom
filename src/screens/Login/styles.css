@@ -67,7 +67,7 @@
   background: none;
   margin: 0px;
   padding: 0px;
-  color: #11923a;
+  color: var(--green);
   margin-left: 5px;
 }
 
