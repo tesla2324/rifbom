@@ -55,10 +55,12 @@
 
 .indications {
   display: flex;
+  width: 250px;
 }
 
 .text {
   color: white;
+  background: none;
 }
 
 .textRegister {

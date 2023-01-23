@@ -1,20 +1,31 @@
 import "./styles.css";
 import { useState } from "react";
 
+//externasl
+import axios from "axios";
+
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [values, setValues] = useState({});
+
+  const handleChangeValues = (event) => {
+    const clave = event.target.name;
+    const val = event.target.value;
+    setValues({ ...values, [clave]: val });
+  };
 
   const sendData = () => {
-    console.log(email, password);
-  };
-
-  const handleChangeEmail = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleChangePassword = (event) => {
-    setPassword(event.target.value);
+    axios
+      .post("https://rif-server.vercel.app/api/auth", values, {
+        headers: {
+          "content-type": "application/json",
+        },
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
@@ -26,12 +37,14 @@ const Login = () => {
             <input
               className="input"
               placeholder="Email"
-              onChange={handleChangeEmail}
+              onChange={handleChangeValues}
+              name="email"
             />
             <input
               className="input"
               placeholder="Password"
-              onChange={handleChangePassword}
+              onChange={handleChangeValues}
+              name="password"
             />
           </div>
           <button className="iniciar" onClick={() => sendData()}>
