@@ -29,34 +29,36 @@ const Login = () => {
   };
 
   return (
-    <div className="background">
-      <div className="formContainer">
-        <div className="form">
-          <p className="title">Login</p>
-          <div className="inputContainer">
-            <input
-              className="input"
-              placeholder="Email"
-              onChange={handleChangeValues}
-              name="email"
-            />
-            <input
-              className="input"
-              placeholder="Password"
-              onChange={handleChangeValues}
-              name="password"
-            />
-          </div>
-          <button className="iniciar" onClick={() => sendData()}>
-            Iniciar
-          </button>
-          <div className="indications">
-            <p className="text">¿No tienes una cuenta?</p>
-            <button className="textRegister">Registrate</button>
+    <>
+      <div className="background">
+        <div className="formContainer">
+          <div className="form">
+            <p className="title">Login</p>
+            <div className="inputContainer">
+              <input
+                className="input"
+                placeholder="Email"
+                onChange={handleChangeValues}
+                name="email"
+              />
+              <input
+                className="input"
+                placeholder="Password"
+                onChange={handleChangeValues}
+                name="password"
+              />
+            </div>
+            <button className="iniciar" onClick={() => sendData()}>
+              Iniciar
+            </button>
+            <div className="indications">
+              <p className="text">¿No tienes una cuenta?</p>
+              <button className="textRegister">Registrate</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
