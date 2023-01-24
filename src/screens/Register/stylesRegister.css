@@ -1,21 +1,23 @@
 .background {
-  background: var(--secondary);
+  background: var(--primary);
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .registerContainer {
-  background: var(--primary);
+  background: var(--secondary);
   width: 400px;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.text {
-  background: var(--secondary);
+
+.inputRegister {
+  background: var(--primary);
   width: 350px;
   height: 40px;
   margin-top: 10px;
@@ -23,6 +25,7 @@
   padding-left: 10px;
   color: var(--white);
 }
+
 .register {
   width: 350px;
   height: 100px;
@@ -33,11 +36,11 @@
   color: white;
 }
 
-.text:focus {
+.inputRegister:focus {
   outline: none;
 }
 
-.text::placeholder {
+.inputRegister::placeholder {
   color: var(--placeholder);
 }
 
@@ -48,20 +51,24 @@
   border: 1px solid var(--white);
   color: white;
 }
+
 .question {
   color: var(--white);
   margin-top: 20px;
 }
+
 .btnregister:hover {
   background: var(--white);
   color: rgb(58, 57, 57);
 }
+
 .lastContainer {
   display: flex;
 }
+
 .login {
   background: none;
   padding: 0px;
   margin-left: 05px;
-  color: aqua;
+  color: var(--green);
 }

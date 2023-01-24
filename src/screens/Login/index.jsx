@@ -1,5 +1,6 @@
 import "./stylesLogin.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 //externasl
 import axios from "axios";
@@ -53,7 +54,9 @@ const Login = () => {
             </button>
             <div className="indications">
               <p className="text">¿No tienes una cuenta?</p>
-              <button className="textRegister">Registrate</button>
+              <Link className="textBtnToRegister" to={"register"}>
+                Registrate
+              </Link>
             </div>
           </div>
         </div>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-
-import "./styles.css";
+import "./stylesRegister.css";
 
 const Register = () => {
   const [values, setValues] = useState({});
@@ -38,31 +37,31 @@ const Register = () => {
           <p>Register</p>
         </div>
         <input
-          className="text"
+          className="inputRegister"
           name="name"
           placeholder="Name"
           onChange={handleValues}
         />
         <input
-          className="text"
+          className="inputRegister"
           name="email"
           placeholder="Email"
           onChange={handleValues}
         />
         <input
-          className="text"
+          className="inputRegister"
           placeholder="Password"
           name="password"
           onChange={handleValues}
         />
         <input
-          className="text"
+          className="inputRegister"
           placeholder="Confirm Password"
           name="repeatPassword"
           onChange={handleValues}
         />
         <input
-          className="text"
+          className="inputRegister"
           placeholder="Telephone"
           name="phone"
           onChange={handleValues}

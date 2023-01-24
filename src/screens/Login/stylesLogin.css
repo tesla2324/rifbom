@@ -50,7 +50,7 @@
 }
 
 .input::placeholder {
-  color: #9d9dd7;
+  color: var(--placeholder);
 }
 
 .indications {
@@ -65,7 +65,7 @@
   margin: 0px;
 }
 
-.textRegister {
+.textBtnToRegister {
   background: none;
   margin: 0px;
   padding: 0px;
