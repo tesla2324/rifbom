@@ -7,24 +7,6 @@
   background: var(--primary);
 }
 
-.formContainer {
-  width: 400px;
-  height: 400px;
-  background-color: var(--secondary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.form {
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .title {
   color: white;
   font-size: 17px;
@@ -45,6 +27,24 @@
   padding: 5px;
 }
 
+.formContainer {
+  width: 400px;
+  height: 400px;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .input:focus {
   outline: none;
 }
@@ -55,12 +55,14 @@
 
 .indications {
   display: flex;
-  width: 250px;
+  width: 260px;
+  align-items: baseline;
 }
 
 .text {
   color: white;
   background: none;
+  margin: 0px;
 }
 
 .textRegister {
