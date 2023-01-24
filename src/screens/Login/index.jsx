@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./stylesLogin.css";
 import { useState } from "react";
 
 //externasl

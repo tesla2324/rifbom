@@ -55,12 +55,14 @@
 
 .indications {
   display: flex;
-  width: 250px;
+  width: 260px;
+  align-items: baseline;
 }
 
 .text {
   color: white;
   background: none;
+  margin: 0px;
 }
 
 .textRegister {
