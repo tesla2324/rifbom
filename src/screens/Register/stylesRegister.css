@@ -1,5 +1,5 @@
 .background {
-  background: var(--secondary);
+  background: var(--primary);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -7,15 +7,15 @@
   align-items: center;
 }
 .registerContainer {
-  background: var(--primary);
+  background: var(--secondary);
   width: 400px;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.text {
-  background: var(--secondary);
+.inputRegister {
+  background: var(--primary);
   width: 350px;
   height: 40px;
   margin-top: 10px;
@@ -33,7 +33,7 @@
   color: white;
 }
 
-.text:focus {
+.inputRegister:focus {
   outline: none;
 }
 

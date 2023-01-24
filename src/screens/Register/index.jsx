@@ -1,15 +1,14 @@
 import { useState } from "react";
 import axios from "axios";
-
-import "./styles.css";
+import "./stylesRegister.css";
 
 const Register = () => {
   const [values, setValues] = useState({});
 
   const handleValues = (event) => {
     const clave = event.target.name;
-    const valore = event.target.value;
-    setValues({ ...values, [clave]: valore });
+    const valor = event.target.value;
+    setValues({ ...values, [clave]: valor });
   };
 
   const sendData = () => {
@@ -26,7 +25,7 @@ const Register = () => {
       .then((response) => {
         console.log(response);
       })
-      .catch((error) => {
+      .then((error) => {
         console.log(error);
       });
   };
@@ -38,31 +37,31 @@ const Register = () => {
           <p>Register</p>
         </div>
         <input
-          className="text"
+          className="inputRegister"
           name="name"
           placeholder="Name"
           onChange={handleValues}
         />
         <input
-          className="text"
+          className="inputRegister"
           name="email"
           placeholder="Email"
           onChange={handleValues}
         />
         <input
-          className="text"
+          className="inputRegister"
           placeholder="Password"
           name="password"
           onChange={handleValues}
         />
         <input
-          className="text"
+          className="inputRegister"
           placeholder="Confirm Password"
           name="repeatPassword"
           onChange={handleValues}
         />
         <input
-          className="text"
+          className="inputRegister"
           placeholder="Telephone"
           name="phone"
           onChange={handleValues}
