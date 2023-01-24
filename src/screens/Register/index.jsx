@@ -7,8 +7,8 @@ const Register = () => {
 
   const handleValues = (event) => {
     const clave = event.target.name;
-    const valore = event.target.value;
-    setValues({ ...values, [clave]: valore });
+    const valor = event.target.value;
+    setValues({ ...values, [clave]: valor });
   };
 
   const sendData = () => {
@@ -25,7 +25,7 @@ const Register = () => {
       .then((response) => {
         console.log(response);
       })
-      .catch((error) => {
+      .then((error) => {
         console.log(error);
       });
   };
