@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./stylesRegister.css";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [values, setValues] = useState({});
@@ -73,7 +74,9 @@ const Register = () => {
         <div className="question">
           <div className="lastContainer">
             <p>¿Ya tienes un acuenta?</p>
-            <button className="login">Inicia</button>
+            <Link className="login" to={"/"}>
+              Inicia
+            </Link>
           </div>
         </div>
       </div>
