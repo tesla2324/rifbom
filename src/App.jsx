@@ -1,20 +1,14 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import Register from "./screens/Register";
-import Login from "./screens/Login";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Login />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-]);
+//Routes
+import AllRoutes from "./routes/AllRoutes";
+import OnBoarding from "./routes/OnBoarding";
 
 function App() {
-  return <RouterProvider router={router} />;
+  const token = false;
+
+  return (
+    <BrowserRouter>{token ? <AllRoutes /> : <OnBoarding />}</BrowserRouter>
+  );
 }
 export default App;
