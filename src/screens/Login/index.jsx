@@ -10,17 +10,21 @@ const Login = () => {
 
   const handleChangeValues = (event) => {
     const clave = event.target.name;
-    const val = event.target.value;
-    setValues({ ...values, [clave]: val });
+    const valor = event.target.value;
+    setValues({ ...values, [clave]: valor });
   };
 
   const sendData = () => {
     axios
-      .post("https://rif-server.vercel.app/api/auth", values, {
-        headers: {
-          "content-type": "application/json",
-        },
-      })
+      .post(
+        "https://rif-server.vercel.app/api/auth/new",
+        { ...values, role: "USER_ROLE" },
+        {
+          headers: {
+            "content-type": "application/json",
+          },
+        }
+      )
       .then((response) => {
         console.log(response);
       })
@@ -28,7 +32,6 @@ const Login = () => {
         console.log(error);
       });
   };
-
   return (
     <>
       <div className="background">
