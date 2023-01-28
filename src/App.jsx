@@ -8,7 +8,9 @@ function App() {
   const token = false;
 
   return (
-    <BrowserRouter>{token ? <AllRoutes /> : <OnBoarding />}</BrowserRouter>
+    <BrowserRouter>
+      {token != "" ? <AllRoutes /> : <OnBoarding />}
+    </BrowserRouter>
   );
 }
 export default App;
