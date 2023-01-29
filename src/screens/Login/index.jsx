@@ -5,8 +5,16 @@ import { Link } from "react-router-dom";
 //externasl
 import axios from "axios";
 
+//Globals
+import { useDispatch } from "react-redux";
+
+//Actions
+import { editToken } from "../../globals/features/auth";
+
 const Login = () => {
   const [values, setValues] = useState({});
+
+  const dispatch = useDispatch();
 
   const handleChangeValues = (event) => {
     const clave = event.target.name;
@@ -22,8 +30,8 @@ const Login = () => {
         },
       })
       .then((response) => {
-        console.log(response.data.token);
         localStorage.setItem("token", response.data.token);
+        dispatch(editToken("parametro de editToken"));
       })
       .catch((error) => {
         console.log(error);
