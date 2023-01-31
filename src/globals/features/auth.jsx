@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = { token: "" };
 
-export const authSlice = createSlice({
-  name: "token",
+const authSlice = createSlice({
+  name: "auth",
   initialState: initialState,
   reducers: {},
 });
