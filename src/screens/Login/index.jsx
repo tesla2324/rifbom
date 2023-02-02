@@ -35,7 +35,7 @@ const Login = () => {
       )
       .then((response) => {
         localStorage.setItem("token", response.data.token);
-        dispatch(editToken("parametro de editToken"));
+        dispatch(editToken(response.data.token));
       })
       .catch((error) => {
         console.log(error);

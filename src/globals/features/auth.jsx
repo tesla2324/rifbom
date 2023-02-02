@@ -5,7 +5,11 @@ const initialState = { token: "" };
 const authSlice = createSlice({
   name: "auth",
   initialState: initialState,
-  reducers: {},
+  reducers: {
+    editToken: (state, action) => {
+      state.token = action.payload;
+    },
+  },
 });
 
 export default authSlice.reducer;
