@@ -1,0 +1,51 @@
+.containerLayout {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: #f0f7ff;
+}
+
+.sidebardDash {
+  height: 100vh;
+  width: 350px;
+  background: #161f6a;
+}
+
+.contentRoute {
+  width: calc(100% - 350px);
+}
+
+.logoContainer {
+  height: 100px;
+}
+
+.optionsNav {
+  height: calc(100% - 180px);
+  padding-left: 50px;
+}
+
+.avatarUser {
+  height: 80px;
+}
+
+.linkContainer {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.linkSidebar {
+  text-decoration: none;
+  color: black;
+  z-index: 2;
+  padding-left: 20px;
+}
+
+.bgItemSelected {
+  position: absolute;
+  z-index: 1;
+  margin-top: 5px;
+}
