@@ -25,7 +25,7 @@ const Login = () => {
   const sendData = () => {
     axios
       .post(
-        "https://rif-server.vercel.app/api/auth/new",
+        "https://rif-server.vercel.app/api/auth",
         { ...values, role: "USER_ROLE" },
         {
           headers: {
